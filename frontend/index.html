@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Resume Screener</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Upload Resume and Job Description</h1>
+    <form id="uploadForm">
+      <label>Resume PDF:</label>
+      <input type="file" name="resume" id="resume" required>
+
+      <label>Job Description:</label>
+      <textarea name="jd" id="jd" rows="6" required></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <!-- Loading Spinner -->
+    <div id="loadingSpinner" class="spinner" style="display:none;"></div>
+
+    <div id="result" class="response-container"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
