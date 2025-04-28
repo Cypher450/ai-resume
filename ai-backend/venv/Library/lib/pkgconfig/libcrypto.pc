@@ -1,4 +1,4 @@
-prefix=C:/Users/seshd/OneDrive/Desktop/ai resume/ai-backend/venv/Library 
+prefix=C:/Users/seshd/OneDrive/Desktop/ai-resume/ai-backend/venv/Library 
 exec_prefix=${prefix}
 libdir=${exec_prefix}/lib
 includedir=${prefix}/include

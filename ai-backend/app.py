@@ -1,15 +1,16 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, render_template # type: ignore
 from utils.resume_parser import process_resume
-from flask_cors import CORS
+from flask_cors import CORS # type: ignore
 
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder='static', template_folder='templates')
 CORS(app)
 
 
-@app.route("/", methods=["GET"])
+
+@app.route('/')
 def home():
-    return "AI Resume Parser Flask API is running!"
+    return render_template('index.html')
 
 
 @app.route('/parse-resume', methods=['POST'])

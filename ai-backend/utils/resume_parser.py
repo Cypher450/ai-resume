@@ -1,7 +1,7 @@
 import os
 import json
-import google.generativeai as genai
-import PyPDF2 as pdf
+import google.generativeai as genai # type: ignore
+import PyPDF2 as pdf # type: ignore
 from dotenv import load_dotenv
 import re
 
